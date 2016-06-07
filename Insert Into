@@ -1,0 +1,9 @@
+INSERT INTO Customers (CustomerName, ContactName, Address, City, PostalCode, Country)
+VALUES ('Cardinal','Tom B. Erichsen','Skagen 21','Stavanger','4006','Norway');
+
+-*-*- The CustomerID column is automatically updated with a unique number for each record in the table.
+
+INSERT INTO Customers (CustomerName, City, Country)
+VALUES ('Cardinal', 'Stavanger', 'Norway');
+
+-*-*- You can only insert data in specific columns. Other columns will be NULL.
