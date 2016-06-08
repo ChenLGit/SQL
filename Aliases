@@ -1,0 +1,7 @@
+SQL aliases are used to temporarily rename a table or a column heading.
+
+SELECT column_name AS alias_name
+FROM table_name;
+
+SELECT column_name(s)
+FROM table_name AS alias_name;
