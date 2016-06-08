@@ -1,7 +1,28 @@
 SQL aliases are used to temporarily rename a table or a column heading.
 
+Aliases can be useful when:
+There are more than one table involved in a query
+Functions are used in the query
+Column names are big or not very readable
+Two or more columns are combined together
+
+
+
 SELECT column_name AS alias_name
 FROM table_name;
 
 SELECT column_name(s)
 FROM table_name AS alias_name;
+
+Example:
+1.  SELECT CustomerName AS Customer, ContactName AS [Contact Person]
+    FROM Customers;
+
+2.1 SELECT CustomerName, Address+', '+City+', '+PostalCode+', '+Country AS Address
+    FROM Customers;
+2.2 SELECT CustomerName, CONCAT(Address,', ',City,', ',PostalCode,', ',Country) AS Address
+    FROM Customers;
+    
+3.  SELECT o.OrderID, o.OrderDate, c.CustomerName
+    FROM Customers AS c, Orders AS o
+    WHERE c.CustomerName="Around the Horn" AND c.CustomerID=o.CustomerID;
