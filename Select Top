@@ -1,0 +1,5 @@
+SELECT TOP number|percent column_name(s)
+FROM table_name;
+
+-*-*- The SELECT TOP clause can be very useful on large tables with thousands of records. 
+      Returning a large number of records can impact on performance.
