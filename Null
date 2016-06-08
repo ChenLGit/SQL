@@ -1,0 +1,24 @@
+Tip: Always use IS NULL to look for NULL values.
+
+NULL values represent missing unknown data.
+
+By default, a table column can hold NULL values.
+
+This chapter will explain the IS NULL and IS NOT NULL operators.
+
+Example:
+1. SELECT LastName,FirstName,Address FROM Persons
+WHERE Address IS NULL
+
+2. SELECT LastName,FirstName,Address FROM Persons
+WHERE Address IS NOT NULL
+
+-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-
+NULL Function
+SNULL() returns a zero if the value is NULL.
+
+SELECT ProductName,UnitPrice*(UnitsInStock+IFNULL(UnitsOnOrder,0))
+FROM Products
+
+SELECT ProductName,UnitPrice*(UnitsInStock+COALESCE(UnitsOnOrder,0))
+FROM Products
