@@ -1,0 +1,15 @@
+1. The following SQL statement defines the "ID" column to be an auto-increment primary key field in the "Persons" table:
+
+CREATE TABLE Persons
+(
+ID int NOT NULL AUTO_INCREMENT,
+LastName varchar(255) NOT NULL,
+FirstName varchar(255),
+Address varchar(255),
+City varchar(255),
+PRIMARY KEY (ID)
+)
+
+2. To let the AUTO_INCREMENT sequence start with another value, use the following SQL statement:
+
+ALTER TABLE Persons AUTO_INCREMENT=100
