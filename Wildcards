@@ -1,0 +1,9 @@
+A wildcard character can be used to substitute for any other character(s) in a string.
+
+Wildcard	Description
+%	          A substitute for zero or more characters
+_	          A substitute for a single character
+[charlist]	Sets and ranges of characters to match
+[^charlist]
+or
+[!charlist]	Matches only a character NOT specified within the brackets
