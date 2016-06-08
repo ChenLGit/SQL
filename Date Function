@@ -1,0 +1,16 @@
+MySQL Date Functions
+
+Tip: If you want to keep your queries simple and easy to maintain, do not allow time components in your dates!
+
+The following table lists the most important built-in date functions in MySQL:
+
+Function	Description
+NOW()	Returns the current date and time
+CURDATE()	Returns the current date
+CURTIME()	Returns the current time
+DATE()	Extracts the date part of a date or date/time expression
+EXTRACT()	Returns a single part of a date/time
+DATE_ADD()	Adds a specified time interval to a date
+DATE_SUB()	Subtracts a specified time interval from a date
+DATEDIFF()	Returns the number of days between two dates
+DATE_FORMAT()	Displays date/time data in different formats
